@@ -27,7 +27,7 @@ Danila Lyulya - data analyst
 ## Datasets and code
 Код для парсинга книг в формате `fb2` [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/Parsing_one_file_new.ipynb).  
 
-Пример собранного датасета [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/tree/main/raw_data).  
+Пример собранного датасета [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/tree/main/data).  
 
 **Распарсено 10 тэгов:**  
   
@@ -43,11 +43,11 @@ Danila Lyulya - data analyst
 * `publisher` - издательство  
 * `keywords` - ключевые слова  
 
-Код базовой модели классификации текста на основе RoBERTa RU [здесь]().
+Код базовой модели классификации текста на основе RoBERTa RU [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/code_cru_roberta_ru_base.ipynb).
 
 ## Result 
 С базовыми настройками модели достигнуты следующие метрики:  
+![Alt text](https://github.com/ekaterinatao/hackathon_books_text_classification/tree/main/data/batch_5_run.JPG)  
 
-
-Отчет об обучении модели на [wandb]().  
-Сохраненный чекпойнт модели на [huggingface]().  
+Отчет об обучении модели на [wandb](https://api.wandb.ai/links/taoea/w3n73l4o).  
+Сохраненный чекпойнт модели на [huggingface](https://huggingface.co/ekaterinatao/books_text_class_roBERTa_ru_base).  
