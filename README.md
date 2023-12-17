@@ -47,7 +47,7 @@ Danila Lyulya - data analyst
 
 ## Result 
 С базовыми настройками модели достигнуты следующие метрики:  
-![Alt text](https://github.com/ekaterinatao/hackathon_books_text_classification/tree/main/data/batch_5_run.JPG)  
+![](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/data/batch_5_run.JPG)  
 
 Отчет об обучении модели на [wandb](https://api.wandb.ai/links/taoea/w3n73l4o).  
 Сохраненный чекпойнт модели на [huggingface](https://huggingface.co/ekaterinatao/books_text_class_roBERTa_ru_base).  
