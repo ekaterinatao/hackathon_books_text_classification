@@ -1,11 +1,11 @@
 # Hackathon. Code Crusaders (C+)
 
 ## Table of contents 
-[1. Our team](https://github.com/ekaterinatao/hackathon_books_text_classification#team)   
-[2. Description](https://github.com/ekaterinatao/hackathon_books_text_classification#description)   
-[3. Aim](https://github.com/ekaterinatao/hackathon_books_text_classification#aim)  
-[4. Datasets and code](https://github.com/ekaterinatao/hackathon_books_text_classification#datasets-and-code)  
-[5. Result](https://github.com/ekaterinatao/hackathon_books_text_classification#result)    
+[1. Our team](https://github.com/ekaterinatao/hackathon_books_text_classification?tab=readme-ov-file#team)   
+[2. Description](https://github.com/ekaterinatao/hackathon_books_text_classification?tab=readme-ov-file#description)   
+[3. Aim](https://github.com/ekaterinatao/hackathon_books_text_classification?tab=readme-ov-file#aim)  
+[4. Datasets and code](https://github.com/ekaterinatao/hackathon_books_text_classification?tab=readme-ov-file#datasets-and-code)  
+[5. Result](https://github.com/ekaterinatao/hackathon_books_text_classification?tab=readme-ov-file#result)    
 
 ## Team
 Ilia Beliakov - project manager  
@@ -31,7 +31,7 @@ Danila Lyulya - data analyst
 
 **Распарсено 10 тэгов:**  
   
-* `p` - любой абзац  
+* `p` - любой абзац (исключая абзацы, обозначенные другими тэгами)  
 * `title` - заголовок 
 * `subtitle` - подзаголовок  
 * `poem` - стихи  
@@ -43,7 +43,7 @@ Danila Lyulya - data analyst
 * `publisher` - издательство  
 * `keywords` - ключевые слова  
 
-Код базовой модели классификации текста на основе RoBERTa RU [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/code_cru_roberta_ru_base.ipynb).
+Код базовой модели классификации текста на основе `RoBERTa RU` [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/code_cru_roberta_ru_base.ipynb).
 
 ## Result 
 С базовыми настройками модели достигнуты следующие метрики:  
