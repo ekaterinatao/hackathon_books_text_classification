@@ -10,10 +10,11 @@
 ## Team
 Ilia Beliakov - project manager  
 [Ekaterina Tao](https://github.com/ekaterinatao) - ML engineer  
-Alexander Zhuravlev - data engineer  
+Alexander Zhuravlev - ML, data engineer  
 Bogdan Kostyuk - data engineer  
 Anna Rybakova - data engineer   
 Danila Lyulya - data analyst  
+Denisov Sergey - ML engineer  
 
 ## Description
 Задача 3: Разработка модели для автоматизированного определения структуры книги и назначения стилей абзацев и символов
@@ -29,7 +30,7 @@ Danila Lyulya - data analyst
 
 Пример собранного датасета [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/tree/main/data).  
 
-**Распарсено 10 тэгов:**  
+**Распарсеные тэги:**  
   
 * `p` - любой абзац (исключая абзацы, обозначенные другими тэгами)  
 * `title` - заголовок 
@@ -42,12 +43,21 @@ Danila Lyulya - data analyst
 * `book-title` - название книги   
 * `publisher` - издательство  
 * `keywords` - ключевые слова  
+* `note` - примечания  
 
-Код базовой модели классификации текста на основе `RoBERTa RU` [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/code_cru_roberta_ru_base.ipynb).
+## Result
 
-## Result 
-С базовыми настройками модели достигнуты следующие метрики:  
-![](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/data/batch_5_run.JPG)  
+**Пайплайн**  
+  
+* На вход подается текст в формате `docx`  
+* Проводится анализ и предобработка текста для его подачи в модель  
+* Разметка текста с помощью предобученной модели из семейства `BERT`  
+* На выход выдается файл в формате `xml`  
+  
+Код для запуска пайплайна и разметки текста в формате `docx` с последующим сохранением размеченного файла в формате `xml` можно найти [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/inference_pipeline.ipynb).  
+  
+**Метрики лучшей модели:**  
+![](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/data/metrics_final_model.JPG) ![](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/data/labels_final_model.JPG)  
 
-Отчет об обучении модели на [wandb](https://api.wandb.ai/links/taoea/w3n73l4o).  
-Сохраненный чекпойнт модели на [huggingface](https://huggingface.co/ekaterinatao/books_text_class_roBERTa_ru_base).  
+Финальная модель [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/code_sber_ruRoberta_ru_final.ipynb).  
+Сохраненный чекпойнт модели на [huggingface](https://huggingface.co/ekaterinatao/books_text_class_roBERTa_ru_big/tree/main).  
