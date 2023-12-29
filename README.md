@@ -54,10 +54,10 @@ Denisov Sergey - ML engineer
 * Разметка текста с помощью предобученной модели из семейства `BERT`  
 * На выход выдается файл в формате `xml`  
   
-Код для запуска пайплайна и разметки текста в формате `docx` с последующим сохранением размеченного файла в формате `xml` можно найти [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/inference_pipeline.ipynb).  
+Код для запуска пайплайна с использованием лучшей модели для разметки текста в формате `docx` с последующим сохранением размеченного файла в формате `xml` можно найти [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/inference_pipeline.ipynb).  
   
 **Метрики лучшей модели:**  
 ![](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/data/metrics_final_model.JPG) ![](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/data/labels_final_model.JPG)  
 
-Финальная модель [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/code_sber_ruRoberta_ru_final.ipynb).  
-Сохраненный чекпойнт модели на [huggingface](https://huggingface.co/ekaterinatao/books_text_class_roBERTa_ru_big/tree/main).  
+Финальная модель и используемые гиперпараметры [здесь](https://github.com/ekaterinatao/hackathon_books_text_classification/blob/main/code_sber_ruRoberta_ru_final.ipynb).  
+Сохраненный чекпойнт модели на [huggingface](https://huggingface.co/iliabel/ruRoberta-large_data_new_v23).  
